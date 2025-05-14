@@ -1,15 +1,15 @@
 # Programa Trainee triggo.ai - Excelência em Engenharia de Dados e DataOps
 # 1. Análise Exploratória de Dados
-# 1.1 Volume de Pedidos por Mês
+# Volume de Pedidos por Mês
 A análise do volume de pedidos ao longo do tempo mostra variações sazonais, com picos em novembro e dezembro (Natal e Black Friday).
 
-# 1.2 Distribuição do Tempo de Entrega (delivery_time)
+# Distribuição do Tempo de Entrega (delivery_time)
 O histograma revela que a maioria dos pedidos é entregue em até 20 dias, com concentração entre 1 e 10 dias. Há uma cauda longa, com poucos casos de entregas acima de 200 dias, indicando que atrasos extremos são exceção.
 
-# 1.3 Valor do Frete vs Distância Cliente-Vendedor
+# Valor do Frete vs Distância Cliente-Vendedor
 O gráfico de dispersão indica que o valor do frete tende a aumentar com a distância, mas não de forma linear. A maioria dos pedidos está concentrada em até 2.000 km e frete abaixo de R$ 150. Outliers mostram que outros fatores além da distância influenciam o valor do frete.
 
-# 1.4 Categorias de Produtos Mais Vendidas (Faturamento)
+# Categorias de Produtos Mais Vendidas (Faturamento)
 * Líder: beleza_saude (acima de R$ 1.200.000)
 
 * Destaques: relogios_presentes (> R$ 1.000.000), cama_mesa_banho
@@ -21,7 +21,7 @@ O gráfico de dispersão indica que o valor do frete tende a aumentar com a dist
 # Insights Estratégicos:
 Investir nas categorias líderes, promover intermediárias e explorar nichos com campanhas segmentadas.
 
-# 1.5 Estados com Maior Valor Médio de Pedido
+# Estados com Maior Valor Médio de Pedido
 * Paraíba (PB)
 
 * Acre (AC)
@@ -29,9 +29,22 @@ Investir nas categorias líderes, promover intermediárias e explorar nichos com
 * Amapá (AP)
 
 Esses estados apresentam valores médios mais altos, possivelmente devido à distância logística ou ao tipo de produto.
+# Taxa de retenção
+Nenhum cliente recorrente registrado:
+
+A taxa de clientes recorrentes está em 0%, o que significa que nenhum cliente fez mais de uma compra ou interação registrada.
+
+Possíveis causas para a ausência de clientes recorrentes:
+
+* Produto ou serviço não incentiva recompra: Pode ser que o produto ou serviço seja de compra única, ou que não tenha um apelo para que o cliente volte.
+
+* Problemas na experiência do cliente: Atendimento, qualidade, preço ou outros fatores podem estar desestimulando a fidelização.
+
+* Falta de estratégias de retenção: Não há programas de fidelidade, descontos para clientes antigos, comunicação pós-venda, etc.
+
 
 # 2. Visualização e Dashboards
-# 2.1 Relatório de Vendas por Categoria no Estado de SP
+# Relatório de Vendas por Categoria no Estado de SP
 * Crescimento Geral: Tendência de crescimento nas vendas, com pico entre o final de 2017 e início de 2018.
 
 * Destaques por Categoria:
@@ -46,8 +59,8 @@ Esses estados apresentam valores médios mais altos, possivelmente devido à dis
 
 * esporte_lazer e moveis_decoracao: Crescimento modesto.
 
-# 3. Análise de Satisfação do Cliente
-# 3.1 Avaliação do Cliente x Tempo de Entrega
+# Análise de Satisfação do Cliente
+# Avaliação do Cliente x Tempo de Entrega
 Relação inversa entre tempo de entrega e avaliação do cliente.
 
 * Notas baixas (1 e 2): Tempos de entrega mais altos e dispersos.
@@ -56,30 +69,30 @@ Relação inversa entre tempo de entrega e avaliação do cliente.
 
 Outliers mais frequentes nas notas baixas.
 
-# 4. Análise Comparativa por Cidade do Vendedor
-# 4.1 Total de Vendas (Top 10 Cidades)
+# Análise Comparativa por Cidade do Vendedor
+# Total de Vendas (Top 10 Cidades)
 * São Paulo lidera (> R$ 300.000)
 
 * Guarulhos, Ibitinga e outras cidades relevantes no top 10.
 
-# 4.2 Avaliação Média
+# Avaliação Média
 * Melhores avaliações: Vitória, Auriflama, Triunfo, Tiradentes, Bahia.
 
 Não há sobreposição entre cidades líderes em vendas e avaliação.
 
-# 4.3 Tempo Médio de Entrega
+# Tempo Médio de Entrega
 * Maiores tempos: Congonhal (> 35 dias), Campo Bom, Osvaldo Cruz.
 
 Cidades com maior tempo de entrega não são líderes em vendas ou avaliação.
 
-# 5. Principais Insights
+# Principais Insights
 * Centralização de vendas: Forte concentração em São Paulo.
 
 * Satisfação do cliente: Operações menores podem oferecer melhor atendimento.
 
 * Logística: Atrasos impactam negativamente avaliação e vendas.
 
-# 6. Como Reproduzir a Análise
+# Como Reproduzir a Análise
 * Clone este repositório.
 
 * Instale as dependências necessárias (listar se houver).
