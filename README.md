@@ -29,6 +29,7 @@ Investir nas categorias líderes, promover intermediárias e explorar nichos com
 * Amapá (AP)
 
 Esses estados apresentam valores médios mais altos, possivelmente devido à distância logística ou ao tipo de produto.
+# 2. Solução de Problemas de Negócio
 # Taxa de retenção
 Nenhum cliente recorrente registrado:
 
@@ -42,8 +43,49 @@ Possíveis causas para a ausência de clientes recorrentes:
 
 * Falta de estratégias de retenção: Não há programas de fidelidade, descontos para clientes antigos, comunicação pós-venda, etc.
 
+# Predição de Atraso
+O modelo atual tem boa performance para prever entregas pontuais, mas falha ao prever atrasos. Isso indica que as variáveis days_to_estimate e days_to_approve são insuficientes para caracterizar bem os casos de atraso. A acurácia aparente é alta, mas não reflete um bom desempenho na classe minoritária, que é justamente a mais crítica neste contexto.
 
-# 2. Visualização e Dashboards
+# Segmentacao de clientes
+A maioria dos clientes faz apenas um pedido
+Isso reforça o que foi visto anteriormente: baixa recorrência.
+
+O gasto total é baixo para a maioria, com poucos clientes gastando muito
+O negócio depende de poucos clientes de alto valor.
+
+Tempo de entrega geralmente é baixo, mas há exceções
+A maior parte das entregas é rápida, mas alguns clientes enfrentam atrasos significativos.
+
+Clusters identificam perfis distintos:
+
+* Cluster 0: Cliente comum, baixo valor, entrega rápida.
+
+* Cluster 1: Cliente comum, baixo valor, entrega lenta.
+
+* Cluster 2: Cliente de alto valor, entrega variável.
+
+# Análise de Satisfação
+* Tempo de Entrega vs Nota
+  
+Os gráficos demonstraram uma correlação clara entre o tempo de entrega e a nota dada pelo cliente. Quanto mais rápido o pedido é entregue, maior tende a ser a avaliação, sendo a nota 5 (máxima) predominante em entregas rápidas. Isso reforça a importância da logística eficiente para a satisfação do cliente.
+* Preço vs Nota
+  
+Ao analisar a relação entre o preço pago e a nota, não foi observada uma correlação significativa. Os clientes deram notas altas e baixas independentemente do valor pago, o que sugere que o preço, por si só, não é um fator determinante na satisfação — pelo menos dentro da faixa de preços observada.
+* Categoria do Produto vs Nota
+  
+Algumas categorias de produtos se destacaram com médias de avaliação mais altas, especialmente:
+
+* Tablets
+* Roupas infantis
+* CDs/DVDs
+
+Essas categorias apresentaram uma concentração maior de notas 5, indicando que os consumidores tendem a ficar mais satisfeitos com esses tipos de produtos. Pode ser que fatores como expectativa bem definida, valor percebido ou qualidade consistente expliquem esse resultado.
+
+# Conclusão
+
+A satisfação do cliente é influenciada principalmente pelo tempo de entrega
+
+# 3. Visualização e Dashboards
 # Relatório de Vendas por Categoria no Estado de SP
 * Crescimento Geral: Tendência de crescimento nas vendas, com pico entre o final de 2017 e início de 2018.
 
